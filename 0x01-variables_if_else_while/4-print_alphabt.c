@@ -10,15 +10,17 @@
  */
 int main(void)
 {
-	int char lw, e, q;
+	int gad = 97;
 
-	e = 'e';
-	q = 'q';
-
-	for (lw = 'a'; lw <= 'z'; lw++)
+	while (gad <= 122)
 	{
-	if (lw != e && lw != q)
-	putchar(lw);
+		if (gad == 101 || gad == 113)
+		{
+			gad++;
+			continue;
+		}
+		putchar(gad);
+		gad++;
 	}
 	putchar('\n');
 	return (0);
