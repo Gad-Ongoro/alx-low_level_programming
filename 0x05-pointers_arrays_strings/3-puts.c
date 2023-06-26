@@ -5,13 +5,18 @@
  *
  * @str: str to be printed
  *
- * Return: sol
+ * Return: str and \n
  */
 void _puts(char *str)
 {
-	for (; *str != '\0'; str++)
+	int alx;
+
+	alx = 0;
+
+	while (str[alx])
 	{
-		_putchar(*str);
+		_putchar(str[alx]);
+		alx++;
 	}
 		_putchar('\n');
 }
