@@ -10,20 +10,15 @@
 
 void print_rev(char *s)
 {
-	int alx = 0;
-	int ga;
+int alx = 0;
 
-	while (*s != '\0')
-	{
+while (s[alx])
+{
 	alx++;
-	s++;
-	}
-	s--;
-	for (ga = alx; ga > 0; ga--)
-	{
-	_putchar(*s);
-	s--;
-	}
-
-	_putchar('\n');
+{
+while (alx--)
+{
+	_putchar(s[alx]);
+}
+_putchar('\n');
 }
