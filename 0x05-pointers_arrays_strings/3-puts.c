@@ -9,14 +9,9 @@
  */
 void _puts(char *str)
 {
-	int alx;
-
-	alx = 0;
-
-	while (str[alx])
+	while (*str != '\0')
 	{
-		_putchar(str[alx]);
-		alx++;
+		_putchar(*str++);
 	}
 		_putchar('\n');
 }
