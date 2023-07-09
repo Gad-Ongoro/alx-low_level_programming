@@ -36,7 +36,7 @@ int _atoi(char *s)
 		myInt1++;
 	}
 
-	if (f == 0)
+	if (myInt5 == 0)
 		return (0);
 
 	return (myInt3);
