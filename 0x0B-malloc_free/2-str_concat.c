@@ -1,5 +1,4 @@
 #include <stdlib.h>
-
 #include "main.h"
 
 /**
@@ -41,8 +40,8 @@ char *str_concat(char *s1, char *s2)
 
 	while (s2[myInt2] != '\0')
 	{
-		myChar[myInt1] = s2[myChar2];
-		myInt1++, myChar2++;
+		myChar[myInt1] = s2[myInt2];
+		myInt1++, myInt2++;
 	}
 	myChar[myInt1] = '\0';
 	return (myChar);
