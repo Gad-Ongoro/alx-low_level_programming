@@ -12,7 +12,13 @@
 
 int _atoi(char *s)
 {
-	int myInt1, myInt2, myInt3, myInt4, myInt5, myInt6 = 0;
+
+	int myInt1 = 0;
+	int myInt2 = 0;
+	int myInt3 = 0;
+	int myInt4 = 0;
+	int myInt5 = 0;
+	int myInt6 = 0;
 
 	while (s[myInt4] != '\0')
 		myInt4++;
@@ -55,7 +61,7 @@ int _atoi(char *s)
 
 int main(int argc, char *argv[])
 {
-	int ans, int1, int2;
+	int ans, d1, d2;
 
 	if (argc < 3 || argc > 3)
 	{
@@ -63,9 +69,9 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 
-	int1 = _atoi(argv[1]);
-	int2 = _atoi(argv[2]);
-	ans = int1 * int2;
+	d1 = _atoi(argv[1]);
+	d2 = _atoi(argv[2]);
+	ans = d1 * d2;
 
 	printf("%d\n", ans);
 
