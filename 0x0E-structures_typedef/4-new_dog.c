@@ -72,7 +72,7 @@ char *strCopy(char *dest, char *src)
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dot_t *dog;
+	dog_t *dog;
 	int length1;
 	int length2;
 
