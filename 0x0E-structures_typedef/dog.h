@@ -8,7 +8,7 @@
  *
  * @age: age
  *
- * @own: owner
+ * @owner: owner
  *
  */
 
@@ -16,7 +16,7 @@ struct dog
 {
 	char *name;
 	float age;
-	char *own;
+	char *owner;
 };
 
 /**
@@ -25,9 +25,9 @@ struct dog
  */
 typedef struct dog dogTdf;
 
-void init_dog(struct dog *d, char *name, float age, char *own);
+void init_dog(struct dog *d, char *name, float age, char *owner);
 void print_dog(struct dog *d);
-dogTdf *new_dog(char *name, float age, char *own);
+dogTdf *new_dog(char *name, float age, char *owner);
 void free_dog(dogTdf *d);
 char *_strcpy(char *dest, char *src);
 int _strlen(char *s);
